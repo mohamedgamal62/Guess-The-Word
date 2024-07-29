@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Tahoma;
+        background-color: #eee;
+}
+
+.guss-game {
+    width: 1000px;
+    display: flex;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.area {
+    flex: 1;
+    padding: 20px;
+}
+
+.inputs > div {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        font-size: 30px;
+        font-weight: bold;
+        color: #F44336;
+        margin-right: 30px;
+    }
+    input {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        margin-right: 5px;
+        font-size: 40px;
+        caret-color: #F44336;
+        background-color: white;
+        border-bottom: 3px solid #222 ;
+        &:focus {
+            outline-color: #ccc;
+        }
+        &.color1 {
+            background-color: #f89e13;
+            border-color:#f89e13 ;
+            color: white;
+        }
+
+        &.color2 {
+            border-color: #18ba89;
+            background-color: #18ba89;
+            color: white;
+        }
+
+        &.color3 {
+            border-color: #27303f;
+            background-color: #27303f;
+            color: white;
+        }
+}
+    }
+
+    .disable {
+        opacity: .5;
+        pointer-events: none;
+    }
+.controls {
+    display: flex;
+}
+
+.controls .check {
+    background-color: #F44336;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+    cursor: pointer;
+}
+
+.check:disabled {
+        background-color: black;
+        opacity: 0.4;
+        cursor: no-drop;
+}
+
+.controls .hent {
+    margin-left: 5px;
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hent:disabled {
+    background-color: black;
+    opacity: 0.4;
+    cursor: no-drop;
+}
+
+.keys {
+    flex: 1;
+}
+
+.keys .key {
+    display: flex;
+    background: #fff;
+    margin: 15px;
+    padding: 15px;
+}
+
+.keys h2 {
+    text-align: center;
+    }
+
+
+.keys .color1 {
+    width: 25px;
+    height: 25px;
+    background-color: #f89e13;
+    position: relative;
+}
+
+.keys .color2 {
+    width: 25px;
+    height: 25px;
+    background-color: #18ba89;
+    position: relative;
+}
+
+.keys .color3 {
+    width: 25px;
+    height: 25px;
+    background-color: #27303f;
+    position: relative;
+}
+
+.key .text {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+.message {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #F44336;
+}
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
